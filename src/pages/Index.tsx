@@ -32,14 +32,14 @@ const Index = () => {
               <span className="text-background text-sm font-bold">AI</span>
             </div>
             <span className="text-lg font-semibold bg-gradient-to-r from-primary to-holographic bg-clip-text text-transparent">
-              StudyAI
+              EduNova
             </span>
           </div>
           <p className="text-muted-foreground">
             Empowering students with AI-driven learning experiences
           </p>
           <div className="mt-4 text-sm text-muted-foreground/60">
-            © 2024 StudyAI. Crafted with intelligence and care.
+            © 2024 EduNova. Crafted with intelligence and care.
           </div>
         </div>
       </footer>

@@ -33,7 +33,7 @@ export function Navigation() {
               <Brain className="w-5 h-5 text-background" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-holographic bg-clip-text text-transparent">
-              StudyAI
+              EduNova
             </span>
           </div>
 
