@@ -61,7 +61,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// AI Study Assistant colors
+				'primary-glow': 'hsl(var(--primary-glow))',
+				'accent-glow': 'hsl(var(--accent-glow))',
+				holographic: 'hsl(var(--holographic))',
+				'holographic-glow': 'hsl(var(--holographic-glow))',
+				wisdom: 'hsl(var(--wisdom))',
+				'wisdom-glow': 'hsl(var(--wisdom-glow))',
+				neural: 'hsl(var(--neural))',
+				'neural-glow': 'hsl(var(--neural-glow))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +93,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				// AI Study Assistant animations
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow-pulse': {
+					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary-glow) / 0.3)' },
+					'50%': { boxShadow: '0 0 40px hsl(var(--primary-glow) / 0.6)' }
+				},
+				'holographic-shift': {
+					'0%': { background: 'hsl(var(--holographic))' },
+					'50%': { background: 'hsl(var(--neural))' },
+					'100%': { background: 'hsl(var(--holographic))' }
+				},
+				'wisdom-glow': {
+					'0%, 100%': { boxShadow: '0 0 15px hsl(var(--wisdom) / 0.3)' },
+					'50%': { boxShadow: '0 0 30px hsl(var(--wisdom) / 0.6)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+				'holographic-shift': 'holographic-shift 4s ease-in-out infinite',
+				'wisdom-glow': 'wisdom-glow 2.5s ease-in-out infinite'
 			}
 		}
 	},

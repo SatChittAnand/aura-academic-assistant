@@ -18,6 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // AI Study Assistant variants
+        holographic: "bg-holographic text-background hover:bg-holographic-glow shadow-[0_0_20px_hsl(var(--holographic)/0.4)] hover:shadow-[0_0_30px_hsl(var(--holographic-glow)/0.6)] transition-all duration-300",
+        neural: "bg-neural text-background hover:bg-neural-glow border border-neural-glow/20 shadow-[0_0_15px_hsl(var(--neural)/0.3)] hover:shadow-[0_0_25px_hsl(var(--neural-glow)/0.5)]",
+        wisdom: "bg-wisdom text-background hover:bg-wisdom-glow shadow-[0_0_15px_hsl(var(--wisdom)/0.4)] hover:shadow-[0_0_25px_hsl(var(--wisdom-glow)/0.6)] animate-wisdom-glow",
+        assistant: "bg-gradient-to-r from-primary to-holographic text-background hover:from-primary-glow hover:to-holographic-glow shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_30px_hsl(var(--primary-glow)/0.5)] transition-all duration-500"
       },
       size: {
         default: "h-10 px-4 py-2",
